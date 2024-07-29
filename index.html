@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body{
+            margin: 0;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns:repeat(6,1fr);
+            grid-template-rows: repeat(4,150px);
+            grid-gap: 10px;
+        }
+
+        .grid-item{
+            background-color: aqua;
+        }
+ 
+        .header{
+            background-color: maroon;
+        }
+
+        .header-1{
+            background-color: plum;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .header-2{
+            background-color: orangered;
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 5;
+        }
+
+        .header-3{
+            background-color: yellow;
+        }
+
+        .header-4{
+            background-color: green;
+        }
+
+        .header-5{
+            background-color: gray;
+            grid-column-start: 6;
+            grid-column-end: 7;
+        }
+ 
+        .header-6{
+            background-color: lightgreen;
+        }
+
+        .header-7{
+            background-color: green;
+        }
+
+        .header-8{
+            background-color: skyblue;
+        }
+
+        .header-9{
+            grid-column-start: 6;
+            grid-column-end: 7; 
+        }
+
+        .header-10{
+            background-color: lightblue;
+            grid-column-start: 1;
+            grid-column-end: 4; 
+        }
+
+        .header-11{
+            background-color: maroon;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item header">1</div>
+        <div class="grid-item header-1">2</div>
+        <div class="grid-item header-2"><center>CSS Grid Layout</center></div>
+        <div class="grid-item header-3">4</div>
+        <div class="grid-item header-4">5</div>
+        <div class="grid-item header-5">6</div>
+        <div class="grid-item header-6">7</div>
+        <div class="grid-item header-7">8</div>
+        <div class="grid-item header-8">9</div>
+        <div class="grid-item header-9">10</div>
+        <div class="grid-item header-10">11</div>
+        <div class="grid-item header-11">12</div>
+    </div>
+</body>
+</html>
